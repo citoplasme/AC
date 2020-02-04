@@ -1,0 +1,3 @@
+JOB A compress.sub
+SCRIPT PRE A split.sh
+SCRIPT POST A merge.sh

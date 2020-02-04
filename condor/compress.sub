@@ -1,0 +1,13 @@
+Executable              = compress.sh
+Universe                = vanilla
+log                     = log/frag_$(cluster).log
+output                  = log/stdout_$(cluster).txt
+error                   = log/stder_$(cluster).txt
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files    = input$(process).mp4
+transfer_output_files   = output$(process).mp4
+
+Arguments		= $(process)
+
+Queue 10
